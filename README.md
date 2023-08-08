@@ -6,3 +6,6 @@
 - Delete from cart
 - Price update
 - Quantity update
+
+# Live link
+- https://error-at-night.github.io/Sushi-food/menu.html
