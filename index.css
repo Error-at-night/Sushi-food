@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* index page */
+.carouselContainer {
+  position: relative;
+}
+.carouselContainer .carouselSlides {
+  display: none;
+  text-align: center;
+}
+@keyframes fadingAnimation {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.carouselContainer .fadingAnimation {
+  animation-name: fadingAnimation;
+  animation-duration: 1.5s;
+}
+.carouselContainer img {
+  height: 100vh;
+  background-size: cover;
+  width: 100%;
+  background: black;
+  opacity: 1;
+  object-fit: cover;
+}
+.carouselContainer .text {
+  color: white;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.carouselContainer .text h5 {
+  font-size: 2rem;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+.carouselContainer .text h5 span {
+  color: #F1D5BB;
+}
+.carouselContainer .text p {
+  font-size: 1.02rem;
+  line-height: 1.5;
+  width: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+.carouselContainer .text ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.carouselContainer .text a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 8px 18px;
+  border-radius: 10px;
+  margin-left: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.carouselContainer .text a:active {
+  color: grey;
+}
+.carouselContainer .text a:visited {
+  color: black;
+}
+.carouselContainer .text a:hover {
+  color: #F1D5BB;
+  background-color: black;
+}
+.carouselContainer .prev, .carouselContainer .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.carouselContainer .prev:hover, .carouselContainer .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #F1D5BB;
+}
+.carouselContainer .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.plain-container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.plain-container .plain {
+  cursor: pointer;
+  height: 8px;
+  width: 30px;
+  background-color: lightgrey;
+  border-radius: 20px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.plain-container .plain:hover {
+  background-color: grey;
+}
+.plain-container .active {
+  background-color: grey;
+}
+
+/*media query for index page*/
+@media screen and (min-width: 320px) {
+  .carouselContainer .text h5 {
+    line-height: 1.3;
+    font-size: 2.5rem;
+  }
+  .carouselContainer .text p {
+    width: 250px;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 370px) {
+  .carouselContainer .text h5 {
+    font-size: 2.7rem;
+  }
+  .carouselContainer .text p {
+    width: 300px;
+    font-size: 1.27rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  .carouselContainer .text h5 {
+    width: 400px;
+    font-size: 2.8rem;
+  }
+  .carouselContainer .text p {
+    width: 400px;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .carouselContainer .text h5 {
+    width: 600px;
+    font-size: 3rem;
+  }
+  .carouselContainer .text p {
+    width: 500px;
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .carouselContainer .prev, .carouselContainer .next, .next {
+    font-size: 35px;
+  }
+  .carouselContainer .text h5 {
+    font-size: 3.1rem;
+  }
+  .carouselContainer .text p {
+    width: 570px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .carouselContainer .text h5 {
+    margin-bottom: 25px;
+    width: 800px;
+  }
+  .carouselContainer .text p {
+    width: 800px;
+  }
+  .carouselContainer .prev, .carouselContainer .next, .next {
+    font-size: 60px;
+  }
+}
+/* end of media query for index page */
+
+/*# sourceMappingURL=index.css.map */
