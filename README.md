@@ -8,4 +8,4 @@
 - Quantity update
 
 # Live link
-- https://error-at-night.github.io/Sushi-food/menu.html
+- https://error-at-night.github.io/Sushi-food/
